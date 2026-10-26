@@ -1,4 +1,4 @@
-# PWUTS_B10_25091397067 - ResepKita
+# ResepKita
 
 UTS Pemrograman Web, D4 Manajemen Informatika 2025, Universitas Negeri Surabaya.
 

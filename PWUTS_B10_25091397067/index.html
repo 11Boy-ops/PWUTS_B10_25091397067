@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResepKita - Temukan dan Bagikan Resep</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a href="#beranda" class="brand"><img src="images/logo.svg" alt="" width="40" height="40">ResepKita</a>
+    <button id="burger" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#katalog">Katalog Resep</a>
+      <a href="#unggah">Unggah Resep</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1 id="judul">Resep Rumahan Favorit Keluarga</h1>
+    <form id="cariHero" class="search" role="search">
+      <input id="q" type="search" placeholder="Ketik resep atau bahan, misalnya telur" aria-label="Cari resep atau bahan">
+      <button class="btn" type="submit">Cari</button>
+    </form>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="home" hidden>
+    <section>
+      <div class="shead"><h2>Resep Pilihan Hari Ini</h2><a class="btn ghost" href="#katalog">Semua Resep</a></div>
+      <div id="feat" class="grid"></div>
+    </section>
+    <section class="cta">
+      <div><h2>Punya resep andalan?</h2><p>Bagikan dengan format rapi: bahan, takaran, langkah, dan foto.</p></div>
+      <a class="btn" href="#unggah">Unggah Resep</a>
+    </section>
+  </div>
+  <div id="konten" hidden></div>
+</main>
+
+<footer><div class="wrap">© 2026 ResepKita. Kelompok 10 (2025B), Wahyu Adi Pratama (25091397067).</div></footer>
+
+<div id="modal" role="dialog" aria-modal="true" aria-label="Detail resep">
+  <div class="panel"><button class="x" aria-label="Tutup">×</button><div id="mbody"></div></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/recipe-modal.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/upload-form.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

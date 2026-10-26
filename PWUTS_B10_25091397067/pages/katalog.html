@@ -1,0 +1,33 @@
+<section>
+  <h2>Katalog Resep</h2>
+  
+  <div class="filters">
+    <div id="chips" class="chips"></div>
+    
+    <label for="fTime">Waktu masak</label>
+    <select id="fTime" name="fTime">
+      <option value="0">Semua</option>
+      <option value="15">Maks. 15 menit</option>
+      <option value="30">Maks. 30 menit</option>
+      <option value="60">Maks. 60 menit</option>
+    </select>
+    
+    <label for="fDiff">Kesulitan</label>
+    <select id="fDiff" name="fDiff">
+      <option value="">Semua</option>
+      <option value="mudah">Mudah</option>
+      <option value="sedang">Sedang</option>
+      <option value="sulit">Sulit</option>
+    </select>
+    
+    <label for="fSort">Urutkan</label>
+    <select id="fSort" name="fSort">
+      <option value="rating">Rating tertinggi</option>
+      <option value="time">Tercepat</option>
+    </select>
+  </div>
+  
+  <p id="count" class="muted"></p>
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="load" hidden>Tidak ada resep yang cocok. Ubah filter atau kata kunci pencarian.</p>
+</section>
